@@ -1,0 +1,25 @@
+.list
+    &__item
+        margin-bottom: 16px
+    &__link
+        text-decoration: none
+        display: block
+        background: $grey
+        width: 304px
+        padding: 12px 0 12px
+        text-align: center
+        margin-bottom: 12px
+        border-radius: 8px
+        cursor: pointer
+        &:last-child
+            margin-bottom: 0
+        &:hover
+            background: $neon-green
+        &:hover .list__text
+            color: #000000
+
+// Media queries
+@media (max-width: 406px)
+    .list
+        &__link
+            width: 250px
